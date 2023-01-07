@@ -1,0 +1,76 @@
+$width:35%;
+$padding:5rem;
+$marginTop:3rem;
+.Todo__List{
+    list-style: none;
+}
+.App{
+    justify-content: center;
+    align-items: center;
+    h1{
+        background-image: linear-gradient(to right,#0084ff,#13e5f0);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 4.5rem;
+    }
+    .container-fluid{
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap-reverse;
+    }
+}
+h2{
+    background-image: linear-gradient(to right,#0084ff,#00f2ff);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.List{
+    width: 100%;
+    border: none;
+    height: 100%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background:#0084ff; 
+        border-radius: 10px;
+    }
+}
+.Todo__Res{
+    border: 2px solid #0084ff;
+    padding: $padding;
+    width: $width;
+    height: 62vh;
+    border-radius: 20px;
+    margin-top: $marginTop;
+}
+.Todo__Add{
+    margin-top: $marginTop;
+    border: 2px solid  #0084ff;
+    padding: $padding;
+    box-sizing: border-box;
+    width: $width;
+    border-radius: 20px;
+}
+.dropdown{
+    display: inline;
+    margin:2rem ;
+}
+input[type="checkbox"]{
+    margin: 0 6px;
+    position: relative;
+    top: 2px;
+}
+#update{
+    margin-left: 33px;
+}
